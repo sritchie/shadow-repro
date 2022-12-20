@@ -1,0 +1,11 @@
+{:deps true
+ :dev-http {9000 "public"}
+ :builds
+ {:repro
+  {:target :esm
+   :runtime :browser
+   :output-dir "public/js"
+   :modules {:main
+             {:entries [repro]}}
+   :js-options
+   {:output-feature-set :es8}}}}
